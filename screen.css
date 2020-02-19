@@ -32,6 +32,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   height: 100%;
+  background-image: url(MachuPicchuBackgroundImage.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ol, ul {
@@ -48,12 +53,4 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-.bg {
-  background-image: url("MachuPicchuBackgroundImage.JPG");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
