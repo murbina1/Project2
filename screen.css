@@ -55,6 +55,8 @@ table {
 	border-spacing: 0;
 }
 
-.logo {
-
+#logo {
+  display: flex;
+  max-width: 15%;
+  height: auto;
 }
