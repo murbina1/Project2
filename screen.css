@@ -55,19 +55,6 @@ table {
 	border-spacing: 0;
 }
 
-.splash {
-  display: grid;
-  grid-row: 1fr 1fr 1fr;
-  grid-row-gap: 5vh;
-  grid-column: 1fr 2fr 1fr;
-  grid-column-gap: 5vw;
-}
-
-
 .logo {
-  grid-area: 1 / 1;
-}
 
-.nameplate {
-  grid-area: 2 / 2;
 }
