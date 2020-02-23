@@ -22,6 +22,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  font-family:Verdana;
+  font-weight:lightest;
+  letter-spacing:0.05em;
+  word-spacing:0.25em;
+  color:#FFFFFF;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -55,8 +60,26 @@ table {
 	border-spacing: 0;
 }
 
-#logo {
-  display: flex;
-  max-width: 15%;
-  height: auto;
+
+
+.titlebox{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 30vh 40vh 30vh;
+}
+
+.logo{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.logo img{
+  max-width: 50%;
+}
+
+.splashtitle{
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 400%;
+  text-align: center;
 }
