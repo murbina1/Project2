@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  font-family:Verdana;
+  font-family: "Verdana";
   font-weight: lighter;
   letter-spacing:0.10em;
   word-spacing:0.25em;
@@ -101,11 +101,15 @@ table {
 
 .abttitle, .abtpara{
   color: black;
+  font-family: "Roboto";
+  font-size: 200%;
 }
 
 .abttitle{
   grid-column: 1;
   grid-row: 1;
+  letter-spacing:0em;
+  word-spacing:0em;
 }
 
 .abtpara{
