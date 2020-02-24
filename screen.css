@@ -63,18 +63,20 @@ table {
 p, h1{
   color: black;
   font-family: "Roboto";
-  font-size: 200%;
 }
 
 h1{
   letter-spacing:0em;
   word-spacing:0em;
   justify-self: center;
+  font-size: 200%;
+  margin-bottom: 1vh;
 }
 
 p{
-    letter-spacing: -0.02em;
-    word-spacing: -0.02em;
+  letter-spacing: -0.02em;
+  word-spacing: -0.02em;
+  font-size: 125%;
 }
 
 
@@ -131,7 +133,7 @@ p{
 .abtme{
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: 55vh;
+  grid-template-rows: 60vh;
   column-gap: 10vw;
   margin: 10vw;
 }
@@ -143,9 +145,11 @@ p{
 
 .abtphoto{
   grid-column: 2;
-  grid-row: auto / span 2;
-  background-image: url("Photo of Molly Urbina at Ford.jpg");
+  grid-row: 1;
+  background-image: url("FordMollyPhoto.jpg");
   background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+
 }
