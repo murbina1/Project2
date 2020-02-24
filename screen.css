@@ -89,3 +89,36 @@ table {
   font-weight: 100;
   align-self: center;
 }
+
+
+.abtme{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15vh 65vh;
+  padding: 10%;
+  background-color: #fcfcfc;
+}
+
+.abttitle, .abtpara{
+  color: black;
+}
+
+.abttitle{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.abtpara{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.abtphoto{
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+
+.abtphoto img{
+  width: 40vw;
+  height: auto;
+}
