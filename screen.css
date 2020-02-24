@@ -59,6 +59,25 @@ table {
 	border-spacing: 0;
 }
 
+
+p, h1{
+  color: black;
+  font-family: "Roboto";
+  font-size: 200%;
+}
+
+h1{
+  letter-spacing:0em;
+  word-spacing:0em;
+  justify-self: center;
+}
+
+p{
+    letter-spacing: -0.02em;
+    word-spacing: -0.02em;
+}
+
+
 /* front page grid */
 .titlebox{
   display: grid;
@@ -111,38 +130,22 @@ table {
 /* about me grid */
 .abtme{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15vw 55vw;
-  grid-column-gap: 10vw;
-  padding: 10vw;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 55vh;
+  column-gap: 10vw;
+  margin: 10vw;
 }
 
-.abttitle, .abtpara{
-  color: black;
-  font-family: "Roboto";
-  font-size: 200%;
-}
-
-.abttitle{
+.abtwords{
   grid-column: 1;
   grid-row: 1;
-  letter-spacing:0em;
-  word-spacing:0em;
-  justify-self: center;
-}
-
-.abtpara{
-  grid-column: 1;
-  grid-row: 2;
 }
 
 .abtphoto{
   grid-column: 2;
-  grid-row: 1 / 2;
+  grid-row: auto / span 2;
   background-image: url("Photo of Molly Urbina at Ford.jpg");
-  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
 }
