@@ -27,6 +27,7 @@ time, mark, audio, video {
   letter-spacing:0.10em;
   word-spacing:0.25em;
   color:#FFFFFF;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -39,11 +40,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   height: 100%;
-  background-image: url(MachuPicchuBackgroundImage.jpg);
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fcfcfc;
 }
 
 ol, ul {
@@ -67,6 +64,11 @@ table {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 33vh 34vh 33vh;
+  background-image: url(MachuPicchuBackgroundImage.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo{
@@ -110,10 +112,9 @@ table {
 .abtme{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15vh 65vh;
+  grid-template-rows: 15vw 55vw;
   grid-column-gap: 10vw;
   padding: 10vw;
-  background-color: #fcfcfc;
 }
 
 .abttitle, .abtpara{
@@ -138,11 +139,10 @@ table {
 .abtphoto{
   grid-column: 2;
   grid-row: 1 / 2;
-  overflow: hidden;
-  object-fit: scale-down;
-  height: 100%;
-}
+  background-image: url("Photo of Molly Urbina at Ford.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
-.abtphoto img{
-  width: 100%;
 }
