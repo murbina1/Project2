@@ -131,24 +131,22 @@ p{
 
 /* about me grid */
 .abtme{
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 60vh;
-  column-gap: 10vw;
-  margin: 10vw;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  padding: 10vw;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .abtwords{
-  grid-column: 1;
-  grid-row: 1;
+  flex: 1 0 ;
 }
 
-.abtphoto{
-  grid-column: 2;
-  grid-row: 1;
-  background-image: url("FordMollyPhoto.jpg");
-  background-position: center;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
+
+.abtphoto img{
+  flex: 2 0 ;
+  height: 50vh;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
 }
