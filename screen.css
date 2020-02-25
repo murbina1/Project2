@@ -80,7 +80,7 @@ p, h2, a{
 }
 
 h2, a{
-  font-size: 75%;
+  font-size: 80%;
 }
 
 h2{
@@ -88,6 +88,8 @@ h2{
 }
 
 p{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   font-size: 125%;
 }
 
@@ -180,23 +182,18 @@ p{
 .interests{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 35vw;
   grid-template-areas:
-    "career hobbies education"
-    "careercaption hobbiescaption educationcaption";
+    "career hobbies education";
   grid-column-gap: 5vw;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
 }
 
-.panel, .panelcaption{
+.panel{
   background: #ffffff;
   text-align: center;
   border-radius: 1vw;
-}
-
-.panelcaption{
-  margin: 1vw;
 }
 
 .panel img{
@@ -224,14 +221,11 @@ p{
 @media screen and (max-width:700px){
 .interests{
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "career"
-    "careercaption"
     "hobbies"
-    "hobbiescaption"
-    "education"
-    "educationcaption";
+    "education";
   margin-left: 25vw;
   margin-right: 25vw;
   grid-row-gap: 12vw;
@@ -257,4 +251,5 @@ p{
   padding: 50px 0;
   background: #FFFFFF;
   text-align: center;
+  margin-top: 10vw;
 }
