@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
 }
 
-
+/* Fonts and spacing */
 p, h1{
   color: black;
   font-family: "Roboto";
@@ -67,7 +67,7 @@ p, h1{
 
 h1{
   letter-spacing:0em;
-  word-spacing:0em;
+  word-spacing: 0em;
   justify-self: center;
   font-size: 200%;
   margin-bottom: 1vh;
@@ -78,6 +78,7 @@ p{
   word-spacing: -0.02em;
   font-size: 125%;
 }
+
 
 
 /* front page grid */
@@ -136,7 +137,6 @@ p{
 }
 
 .JustABox{
-
   display: flex;
   margin: 5vw;
   flex-wrap: wrap-reverse;
@@ -151,7 +151,6 @@ p{
   min-width: 40vw;
   box-sizing: border-box;
   padding: 3vw;
-
 }
 
 .abtphoto img{
