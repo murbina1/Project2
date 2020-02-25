@@ -22,12 +22,12 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Verdana";
   font-weight: lighter;
-  letter-spacing:0.10em;
-  word-spacing:0.25em;
-  color:#FFFFFF;
+  font-family: "Roboto";
+  color: #333333;
 
+  letter-spacing: -0.02em;
+  word-spacing: -0.02em;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -62,34 +62,20 @@ table {
 
 /* Fonts and spacing */
 p, h1, h2, a{
-  font-family: "Roboto";
-  color: #333333;
-}
-
-h1{
-  letter-spacing:0em;
-  word-spacing: 0em;
-  text-align: center;
-  font-size: 200%;
+  margin-top: 1vh;
   margin-bottom: 1vh;
 }
 
-p, h2, a{
-  letter-spacing: -0.02em;
-  word-spacing: -0.02em;
+h1{
+  text-align: center;
+  font-size: 200%;
 }
 
 h2, a{
   font-size: 80%;
 }
 
-h2{
-  margin-top: .5vw;
-}
-
 p{
-  margin-top: 1vw;
-  margin-bottom: 1vw;
   font-size: 125%;
 }
 
@@ -123,7 +109,11 @@ p{
   border-width: thick;
   border-color: #FFFFFF;
   padding: 5%;
-  font-size: 10vw;
+  font-family: "Verdana";
+  letter-spacing:0.10em;
+  word-spacing:0.25em;
+  color:#FFFFFF;
+  font-size: 7vw;
   text-align: center;
   font-weight: 100;
   align-self: center;
@@ -182,7 +172,7 @@ p{
 .interests{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 35vw;
+  grid-template-rows: auto;
   grid-template-areas:
     "career hobbies education";
   grid-column-gap: 5vw;
