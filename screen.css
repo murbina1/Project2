@@ -22,26 +22,18 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  font-family: "Roboto";
   color: #333333;
-
-  letter-spacing: -0.02em;
-  word-spacing: -0.02em;
+  font-stretch: ultra-condensed;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 115%
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-
-
-/* background image */
-body {
-  line-height: 1;
-  height: 100%;
-  background-color: #CCCCCC;
-  min-width: 200px;
 }
 
 ol, ul {
@@ -60,28 +52,48 @@ table {
   border-spacing: 0;
 }
 
+
+
+/* background image */
+body {
+  line-height: 1;
+  height: 100%;
+  background-color: #CCCCCC;
+  min-width: 200px;
+}
+
 /* Fonts and spacing */
-p, h1, h2, a{
+p, h1, h2, h4, a{
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
 
+/*About me*/
+h1{
+
+  text-align: center;
+  font-size: 200%;
+}
+
+/*footer body*/
+h2{
+}
+
+/*Panel caption body*/
 h3{
   margin:2vw;
   text-align: left;
 }
 
-h1{
-  text-align: center;
-  font-size: 200%;
-}
-
-h2, a, h3{
-  font-size: 80%;
+/*Panel caption title*/
+h4{
+  font-size: 150%;
+  margin-top: 2vw;
 }
 
 p{
-  font-size: 125%;
+  font-size: 120%;
+  margin-top: 2vw;
 }
 
 
@@ -108,14 +120,14 @@ p{
 }
 
 .splashtitle{
+
   grid-column: 2;
   grid-row: 2;
   border: solid;
   border-width: thick;
   border-color: #FFFFFF;
   padding: 5%;
-  font-family: "Verdana";
-  letter-spacing:0.10em;
+  letter-spacing:0.20em;
   word-spacing:0.25em;
   color:#FFFFFF;
   font-size: 7vw;
@@ -128,8 +140,10 @@ p{
   grid-column: 2;
   grid-row: 3;
   padding-bottom: 3vh;
-  align-self: flex-end;
-  justify-self: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrow img{
