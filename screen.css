@@ -61,7 +61,7 @@ table {
 }
 
 /* Fonts and spacing */
-p, h1, h2{
+p, h1, h2, a{
   font-family: "Roboto";
   color: #333333;
 }
@@ -74,18 +74,23 @@ h1{
   margin-bottom: 1vh;
 }
 
-h2{
-  margin-top: .5vw;
+p, h2, a{
   letter-spacing: -0.02em;
   word-spacing: -0.02em;
+}
+
+h2, a{
   font-size: 75%;
 }
 
+h2{
+  margin-top: .5vw;
+}
+
 p{
-  letter-spacing: -0.02em;
-  word-spacing: -0.02em;
   font-size: 125%;
 }
+
 
 /* front page grid */
 .titlebox{
@@ -245,7 +250,6 @@ p{
   min-height: none;
 }
 }
-
 
 /*contact informtaion*/
 .footer{
