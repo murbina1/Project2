@@ -129,24 +129,35 @@ p{
 }
 
 
-/* about me grid */
+/* about me flexbox */
 .abtme{
+  max-width: 800px;
+  margin: auto;
+}
+
+.JustABox{
+
   display: flex;
+  margin: 5vw;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-  padding: 10vw;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .abtwords{
   flex: 1 0 ;
+  max-width: 50vw;
+  min-width: 40vw;
+  box-sizing: border-box;
+  padding: 3vw;
+
 }
 
-
 .abtphoto img{
-  flex: 2 0 ;
-  height: 50vh;
-  margin-left: 5vw;
-  margin-bottom: 5vw;
+  flex: 1 0 ;
+  box-sizing: border-box;
+  max-height: 60vh;
+  min-height: 30vh;
+  padding: 3vw;
 }
