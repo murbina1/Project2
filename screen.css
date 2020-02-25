@@ -75,6 +75,7 @@ h1{
 }
 
 h2{
+  margin-top: .5vw;
   letter-spacing: -0.02em;
   word-spacing: -0.02em;
   font-size: 75%;
@@ -208,21 +209,16 @@ p{
 .panel, .panelcaption{
   background: #ffffff;
   text-align: center;
-  overflow: hidden;
-}
-
-.panel{
-  border-top-left-radius: 1vw;
-  border-top-right-radius: 1vw;
+  border-radius: 1vw;
 }
 
 .panelcaption{
   margin: 1vw;
-  border-bottom-left-radius: 1vw;
-  border-bottom-right-radius: 1vw;
 }
 
 .panel img{
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
   width: 25vw;
   height: 25vw;
 }
