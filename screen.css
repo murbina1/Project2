@@ -170,28 +170,6 @@ p{
   padding: 3vw;
 }
 
-@media screen and (max-aspect-ratio: 5/4 ), (max-width:600px){
-.JustABox{
-  flex-wrap: wrap-reverse;
-}
-.abtwords{
-  max-width: 80vw;
-}
-.abtphoto img{
-  max-width: 60vw;
-  min-height: auto;
-}
-}
-
-@media screen and (max-aspecr-ratio:7/3), (max-height:400px){
-.abtphoto img{
-  width: auto;
-  height: 235px;
-  max-height: none;
-  min-height: none;
-}
-}
-
 
 /* Panels */
 .interests{
@@ -221,4 +199,62 @@ p{
   border-top-right-radius: 1vw;
   width: 25vw;
   height: 25vw;
+}
+
+
+/*media queries*/
+@media screen and (max-aspect-ratio: 5/4 ), (max-width:600px){
+.JustABox{
+  flex-wrap: wrap-reverse;
+}
+.abtwords{
+  max-width: 80vw;
+}
+.abtphoto img{
+  max-width: 60vw;
+  min-height: auto;
+}
+}
+
+@media screen and (max-width:700px){
+.interests{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "career"
+    "careercaption"
+    "hobbies"
+    "hobbiescaption"
+    "education"
+    "educationcaption";
+  margin-left: 25vw;
+  margin-right: 25vw;
+  grid-row-gap: 12vw;
+}
+.panel img{
+  width: 50vw;
+  height: 50vw;
+}
+}
+
+@media screen and (max-aspecr-ratio:7/3), (max-height:400px){
+.abtphoto img{
+  width: auto;
+  height: 235px;
+  max-height: none;
+  min-height: none;
+}
+}
+
+
+/*contact informtaion*/
+.footer{
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #FFFFFF;
+
 }
