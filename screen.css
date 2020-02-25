@@ -61,17 +61,23 @@ table {
 }
 
 /* Fonts and spacing */
-p, h1{
-  color: black;
+p, h1, h2{
   font-family: "Roboto";
+  color: #333333;
 }
 
 h1{
   letter-spacing:0em;
   word-spacing: 0em;
-  justify-self: center;
+  text-align: center;
   font-size: 200%;
   margin-bottom: 1vh;
+}
+
+h2{
+  letter-spacing: -0.02em;
+  word-spacing: -0.02em;
+  font-size: 75%;
 }
 
 p{
@@ -79,8 +85,6 @@ p{
   word-spacing: -0.02em;
   font-size: 125%;
 }
-
-
 
 /* front page grid */
 .titlebox{
@@ -192,12 +196,33 @@ p{
 .interests{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 1fr;
-  grid-column-gap: 10vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "career hobbies education"
+    "careercaption hobbiescaption educationcaption";
+  grid-column-gap: 5vw;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+}
+
+.panel, .panelcaption{
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
 }
 
 .panel{
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
 
+.panelcaption{
+  margin: 1vw;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+
+.panel img{
+  width: 25vw;
+  height: 25vw;
 }
