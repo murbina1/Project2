@@ -40,7 +40,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   height: 100%;
-  background-color: #fcfcfc;
+  background-color: #CCCCCC;
+  min-width: 200px;
 }
 
 ol, ul {
@@ -132,21 +133,24 @@ p{
 
 /* about me flexbox */
 .abtme{
-  max-width: 800px;
+  max-width: 85vw;
   margin: auto;
+  background-color: #fcfcfc;
 }
 
 .JustABox{
   display: flex;
-  margin: 5vw;
-  flex-wrap: wrap-reverse;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  flex-wrap: nowrap;
 }
 
 .abtwords{
-  flex: 1 0 ;
+  flex: 1 1 auto ;
   max-width: 50vw;
   min-width: 40vw;
   box-sizing: border-box;
@@ -154,9 +158,32 @@ p{
 }
 
 .abtphoto img{
-  flex: 1 0 ;
+  flex: 1 0 auto;
   box-sizing: border-box;
   max-height: 60vh;
   min-height: 30vh;
   padding: 3vw;
 }
+
+@media screen and (max-aspect-ratio: 5/4 ), (max-width:600px){
+.JustABox{
+  flex-wrap: wrap-reverse;
+}
+.abtwords{
+  max-width: 80vw;
+}
+.abtphoto img{
+  max-width: 60vw;
+  min-height: auto;
+}
+}
+
+@media screen and (max-aspecr-ratio:7/3), (max-height:400px){
+.abtphoto img{
+  width: auto;
+  height: 235px;
+  max-height: none;
+  min-height: none;
+}
+}
+/* Panels */
