@@ -186,4 +186,18 @@ p{
   min-height: none;
 }
 }
+
+
 /* Panels */
+.interests{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  grid-column-gap: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.panel{
+
+}
