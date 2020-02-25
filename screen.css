@@ -22,6 +22,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+/*Font changes*/
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   color: #333333;
@@ -30,6 +31,7 @@ time, mark, audio, video {
   word-spacing: 0em;
   line-height: 115%
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -53,7 +55,6 @@ table {
 }
 
 
-
 /* background image */
 body {
   line-height: 1;
@@ -70,7 +71,6 @@ p, h1, h2, h4, a{
 
 /*About me*/
 h1{
-
   text-align: center;
   font-size: 200%;
 }
@@ -97,11 +97,11 @@ p{
 }
 
 
-/* front page grid */
+/* front page content grid */
 .titlebox{
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
-  grid-template-rows: 33vh 34vh 33vh;
+  grid-template-rows: 33vh 34vh 33vh; /*added up to 100*/
   background-image: url(MachuPicchuBackgroundImage.jpg);
   min-height: 100vh;
   background-position: center;
@@ -109,18 +109,18 @@ p{
   background-size: cover;
 }
 
+/*logo in top right*/
 .logo{
   grid-column: 1;
   grid-row: 1;
 }
-
 .logo img{
   max-width: 15vw;
   max-height: 15vh;
 }
 
+/*center Molly Urbina font*/
 .splashtitle{
-
   grid-column: 2;
   grid-row: 2;
   border: solid;
@@ -136,6 +136,7 @@ p{
   align-self: center;
 }
 
+/*to direct users to scroll down*/
 .arrow{
   grid-column: 2;
   grid-row: 3;
@@ -145,7 +146,6 @@ p{
   margin-left: auto;
   margin-right: auto;
 }
-
 .arrow img{
   max-width: 5vw;
   max-height: 5vh;
@@ -153,6 +153,7 @@ p{
 
 
 /* about me flexbox */
+/*to restrict flexing area size*/
 .abtme{
   max-width: 85vw;
   margin: auto;
@@ -160,17 +161,19 @@ p{
   border-radius: 1vw;
 }
 
+/*flexbox itself*/
 .JustABox{
   display: flex;
   margin-right: 5vw;
   margin-left: 5vw;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
 }
 
+/*abuot me content*/
 .abtwords{
   flex: 1 1 auto ;
   max-width: 50vw;
@@ -179,6 +182,7 @@ p{
   padding: 3vw;
 }
 
+/*about me image*/
 .abtphoto img{
   flex: 1 0 auto;
   box-sizing: border-box;
@@ -188,7 +192,7 @@ p{
 }
 
 
-/* Panels */
+/* Panels grid set up */
 .interests{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
@@ -200,12 +204,12 @@ p{
   margin-right: 7.5vw;
 }
 
+/*panel properties*/
 .panel{
   background: #ffffff;
   text-align: center;
   border-radius: 1vw;
 }
-
 .panel img{
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
@@ -246,10 +250,10 @@ p{
 }
 }
 
-@media screen and (max-aspecr-ratio:7/3), (max-height:400px){
+@media screen and (max-aspecr-ratio:7/3), (max-height:500px){
 .abtphoto img{
   width: auto;
-  height: 235px;
+  height: 300px;
   max-height: none;
   min-height: none;
 }
