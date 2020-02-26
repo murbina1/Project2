@@ -254,15 +254,6 @@ p{
 }
 }
 
-@media screen and (max-aspecr-ratio:7/3), (max-height:500px){
-.abtphoto img{
-  width: auto;
-  height: 300px;
-  max-height: none;
-  min-height: none;
-}
-}
-
 /*contact informtaion*/
 .footer{
   width: 100vw;
