@@ -166,8 +166,8 @@ h1{
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
@@ -181,7 +181,10 @@ h1{
   min-width: 40vw;
   box-sizing: border-box;
   font-size: 2em; /*48/18*/
-  padding: 3vw;
+  padding-left: 3vw;
+  padding-right: 0;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
 }
 
 #abouttitle{
@@ -203,6 +206,7 @@ h1{
   min-height: 30vh;
   padding: 3vw;
 }
+
 
 /* Panels grid set up */
 .interests{
