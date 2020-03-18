@@ -73,15 +73,6 @@ p, h1, h2, h4, a{
   margin-bottom: 1vh;
 }
 
-/*About me*/
-h1{
-
-}
-
-/*footer body*/
-h2{
-  font-size: 2em; /*48/18*/
-}
 
 /*Panel caption body*/
 h3{
@@ -163,7 +154,7 @@ h1{
 
 /* about me flexbox */
 /*to restrict flexing area size*/
-.abtme{
+#about{
   max-width: 85vw;
   margin: auto;
   background-color: #fcfcfc;
@@ -171,7 +162,7 @@ h1{
 }
 
 /*flexbox itself*/
-.JustABox{
+#aboutpanel{
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -182,24 +173,36 @@ h1{
   flex-wrap: nowrap;
 }
 
-/*abuot me content*/
-.abtwords{
+/*about me content*/
+#aboutwords{
+  line-height: 1;
   flex: 1 1 auto ;
   max-width: 50vw;
   min-width: 40vw;
   box-sizing: border-box;
+  font-size: 2em; /*48/18*/
   padding: 3vw;
 }
 
+#abouttitle{
+  text-align: center;
+  font-size: 2em; /*36/18*/
+  text-transform: uppercase;
+}
+
+#abouttext{
+  font-size: 1em;
+  margin-top: 2vw;
+}
+
 /*about me image*/
-.abtphoto img{
+#abtphoto{
   flex: 1 0 auto;
   box-sizing: border-box;
   max-height: 90vh;
   min-height: 30vh;
-  padding: 5vw;
+  padding: 3vw;
 }
-
 
 /* Panels grid set up */
 .interests{
@@ -260,13 +263,20 @@ h1{
 }
 }
 
+
+
 /*contact informtaion*/
-.footer{
+footer{
   width: 100vw;
   padding: 50px 0;
   background: #FFFFFF;
   text-align: center;
   margin-top: 10vw;
+}
+
+
+ul {
+  list-style-type: none;
 }
 
 
