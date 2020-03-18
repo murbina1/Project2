@@ -54,13 +54,17 @@ table {
   border-spacing: 0;
 }
 
-
 /* background image */
-body {
+html, body {
   line-height: 1;
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   background-color: #CCCCCC;
   min-width: 200px;
+
 }
 
 /* Fonts and spacing */
@@ -114,17 +118,17 @@ p{
 }
 
 /*logo in top right*/
-.logo{
+#logo{
   grid-column: 1;
   grid-row: 1;
 }
-.logo img{
+#logo img{
   max-width: 15vw;
   max-height: 15vh;
 }
 
 /*center Molly Urbina font*/
-.splashtitle{
+.header{
   grid-column: 2;
   grid-row: 2;
   border: solid;
@@ -141,7 +145,7 @@ p{
 }
 
 /*to direct users to scroll down*/
-.arrow{
+#arrow{
   grid-column: 2;
   grid-row: 3;
   padding-bottom: 3vh;
@@ -150,7 +154,7 @@ p{
   margin-left: auto;
   margin-right: auto;
 }
-.arrow img{
+#arrow img{
   max-width: 5vw;
   max-height: 5vh;
 }
@@ -168,8 +172,8 @@ p{
 /*flexbox itself*/
 .JustABox{
   display: flex;
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 15vh;
   margin-bottom: 15vh;
   flex-direction: row;
@@ -210,6 +214,7 @@ p{
 
 /*panel properties*/
 .panel{
+  box-sizing: border-box;
   background: #ffffff;
   text-align: center;
   border-radius: 1vw;
@@ -262,3 +267,12 @@ p{
   text-align: center;
   margin-top: 10vw;
 }
+
+
+/*
+*{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
