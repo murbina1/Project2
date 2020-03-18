@@ -29,7 +29,7 @@ time, mark, audio, video {
   font-stretch: ultra-condensed;
   letter-spacing: 0em;
   word-spacing: 0em;
-  line-height: 1.15;
+  line-height: 1;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +106,7 @@ p{
 
 
 /* front page content grid */
-.titlebox{
+header{
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 33vh 34vh 33vh; /*added up to 100*/
@@ -118,11 +118,10 @@ p{
 }
 
 /*logo in top right*/
+
 #logo{
   grid-column: 1;
   grid-row: 1;
-}
-#logo img{
   max-width: 15vw;
   max-height: 15vh;
 }
@@ -153,8 +152,6 @@ p{
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-}
-#arrow img{
   max-width: 5vw;
   max-height: 5vh;
 }
